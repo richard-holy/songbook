@@ -1,0 +1,16 @@
+#body {
+    background-color: black;
+}
+
+#songTitle {
+    color: yellow;
+}
+
+#artist {
+    color: red;
+}
+
+#songTranscript {
+    color: white;
+    font-family:'Courier New', Courier, monospace
+}
