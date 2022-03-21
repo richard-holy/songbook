@@ -13,7 +13,7 @@
         -->
         <link rel="stylesheet" href="css/style.css">
         <!-- <link rel="stylesheet" href="css/skin-default.css"> -->
-        <link rel="stylesheet" href="css/skin-dark.css">
+        <link id='style' rel="stylesheet" href="css/skin-default.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="js/scripts.js"></script>
         <!-- CSS only -->
@@ -21,7 +21,12 @@
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </head>  
-    <body id="body">
+    <body id="body" onLoad="setInitialSkin();">
+        <select id="skin-selector" onChange='changeSkin();'>
+            <option value="skin-default">Default</option>
+            <option value="skin-light">Light</option>
+            <option value="skin-dark">Dark</option>
+        </select>
         <h1 id="songTitle">Song Title</h1>
         <div id="artist">John Doe</div>
         <div id="songTranscript">skakal pes pres oves</div>
