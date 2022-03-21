@@ -28,6 +28,7 @@ function getCookie(cname) {
 }
 
   function setInitialSkin() {
+      // TODO if no skin cookie, set default skin
       var skin = getCookie('skinSelector');
       $('#skin-selector').val(skin);
       changeSkin();
