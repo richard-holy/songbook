@@ -10,7 +10,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost/songbook",
+            "url": "http://localhost/songbook/users.php",
             "webRoot": "${workspaceFolder}"
         }
     ]
